@@ -40,6 +40,7 @@ export const colors = {
   };
   
   export default {
+    fontFamily: '\'Rubik\', sans-serif',
     colors,
     borderRadius: '8px',
     transition: '200ms ease-in-out',
