@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css }from 'styled-components'
 import get from 'lodash/get'
+import { TextStyleVariants } from '../../Foundation/Text';
 
 const ButtonGhost = css`
 color: ${(props) => get (props.theme, `colors.${props.variant}.color`)};
@@ -16,7 +17,6 @@ color: ${function(props){
 }};
 `
 
-
 export const Button = styled.button`
 border: 0;
 cursor: pointer;
@@ -26,8 +26,10 @@ opacity: 1;
 
 transition: opacity ${({ theme }) => theme.transition};
   border-radius: ${({ theme }) => theme.borderRadius};
+
+${TextStyleVariants.smallesException}
   
-  ${({ ghost }) => (ghost ? ButtonGhost : ButtonDefault)}
+ ${({ ghost }) => (ghost ? ButtonGhost : ButtonDefault)}
 
 &:hover,
 &:focus{
