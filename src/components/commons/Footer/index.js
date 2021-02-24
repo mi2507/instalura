@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
+flex: auto;
   padding: 14px;
   display: flex;
   align-items: center;
@@ -10,8 +11,8 @@ const FooterWrapper = styled.footer`
   padding-right: 28px;
   padding-left: 28px;
   img {
-    width: 58px;
-    margin-right: 23px;
+    width: 32px;
+    margin-left: 32px;
   }
   a {
     color: ${({ theme }) => theme.colors.primary.main.color};
