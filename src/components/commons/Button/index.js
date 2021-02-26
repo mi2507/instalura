@@ -11,10 +11,10 @@ const ButtonGhost = css`
 
 const ButtonDefault = css`
   color: white;
-  background-color: ${function(props) {
+  background-color: ${function (props) {
     return get(props.theme, `colors.${props.variant}.color`)
   }};
-  color: ${function(props) {
+  color: ${function (props) {
     return get(props.theme, `colors.${props.variant}.contrastText`)
   }};
 `;
@@ -27,9 +27,9 @@ export const Button = styled.button`
   opacity: 1;
   border-radius: 8px;
   ${TextStyleVariantsMap.smallestException}
-  ${function(props) {
+  ${function (props) {
     // console.log('<Button />', props.variant, props.theme, get(props.theme, `colors.${props.variant}.color`));
-    if(props.ghost) {
+    if (props.ghost) {
       return ButtonGhost;
     }
     return ButtonDefault
@@ -50,6 +50,17 @@ export const Button = styled.button`
      ${TextStyleVariantsMap.paragraph1}
     `,
   })}
+
+    &:disabled{
+     cursor: not-allowed;
+     opacity: .2;
+    }
+
+    ${({ fullWidth }) => fullWidth && css`
+    width:100%
+    `
+    };
+
   ${propToStyle('margin')}
   ${propToStyle('display')}
 `;
