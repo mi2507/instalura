@@ -79,7 +79,7 @@ function FormContent() {
         tag="h1"
         color="tertiary.main"
       >
-        Pronto para saber da vida dos outros?
+        Pronto para saber da vida dos outros????
       </Text>
       <Text
         variant="paragraph1"
