@@ -35,4 +35,4 @@ jobs:
       - name: Install de dependencias
         run: yarn install
       - name: Roda o Linter!
-        run: npm run lint
+        run: yarn lint
