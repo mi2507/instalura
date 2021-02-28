@@ -88,7 +88,8 @@ function FormContent() {
         marginBottom="32px"
       >
         Você está a um passo de saber tudoo que está
-        rolando no bairro, complete seu cadastro agora!
+        rolando no bairro, complete seu cadastro agora!!!!
+        
       </Text>
 
       <div>
