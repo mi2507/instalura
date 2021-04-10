@@ -38,13 +38,13 @@ export default function Home() {
         }}
       >
         {(propsDoModal) => (
-          <FormCadastro propsDoModal= {propsDoModal} />
-         
-
+          <FormCadastro propsDoModal={propsDoModal} />
         )}
       </Modal>
 
-      <Menu />
+      <Menu
+        onCadastrarClick={() => setModalState(true)}
+      />
 
       <Grid.Container
         marginTop={{
@@ -95,7 +95,6 @@ export default function Home() {
               variant="primary.main"
               onClick={() => {
                 // isModalOpen = true;
-                console.log('isModalOpen', isModalOpen);
                 setModalState(!isModalOpen); // novo state sendo atribuido
               }}
             >
