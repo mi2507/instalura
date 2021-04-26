@@ -3,7 +3,7 @@ export default function pageSobre() {
       <div>
          <div>
         <marquee width="100%" direction="up" height="250px">
-                 <h1>EM CONSTRUÇÃO ... </h1>
+                 <h1>EM CONSTRUÇÃO teste ... </h1>
             </marquee>
             </div>
             <div>
